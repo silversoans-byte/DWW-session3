@@ -1,0 +1,85 @@
+/* Card main frmae */
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Light shadow */
+    overflow: hidden; /* hides everything that overflows */
+}
+
+/* card image */
+.card img {
+    width: 100%; /* Image takes 100% of the card width */
+    display: block;
+}
+/* Inner spacing around the text and the button */
+.card-content {
+    padding: 20px;
+    font-family: sans-serif; /* Makes the font style cleaner */
+}
+
+/* Title styling */
+.card-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Normal text styling */
+.card-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4; /* Adds breathing room between lines of text */
+}
+
+/* Button styling */
+.card-button {
+    display: inline-block; /* Allows us to add padding and margins to a link */
+    background-color: #00a896; /* Teal color from the image */
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none; /* Removes the default underline from the link */
+    border-radius: 5px; /* Slightly rounded corners for the button */
+    font-size: 12px;
+}
+/* --- LAYOUT STYLES --- */
+
+/* The main background container */
+.layout-container {
+    background-color: #f7e6cc; /* Beige background color */
+    padding: 40px; /* Space inside the beige box */
+    font-family: sans-serif;
+    max-width: 1000px; /* Limits the maximum width of the whole section */
+    margin: 40px auto; /* Centers the whole box on the page */
+    border: 2px solid #3b82f6; /* Blue border just like in the picture */
+}
+
+/* Header section styling */
+.header {
+    margin-bottom: 30px; /* Space between the text and the cards */
+}
+
+.header h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #000;
+}
+
+.header p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    max-width: 700px; /* Keeps the text from stretching too wide */
+}
+
+/* Container for the cards */
+.cards-wrapper {
+    display: flex; /* This is the magic rule that puts items in a row! */
+    gap: 20px; /* Adds space between the cards */
+    justify-content: flex-start; /* Aligns cards to the left */
+}
