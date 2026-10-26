@@ -1,25 +1,54 @@
 <!DOCTYPE html>
+<!-- The root element that tells the browser this is a modern HTML5 document -->
 <html>
+  
+  <!-- The head section contains background information, metadata, and links to external files -->
   <head>
+    <!-- Connects this HTML structure to your style.css file so the visual rules apply -->
     <link rel="stylesheet" href="style.css">
-<title>Card title</title>
+    <!-- Sets the title that appears in the actual browser tab at the top of the screen -->
+    <title>Card title</title>
   </head> 
+  
+  <!-- The body contains everything that is actually visible on the web page -->
   <body>
-    <!-- The main background box (the beige area) -->
+    
+    <!-- The main background box (the beige area) that holds the entire layout together -->
     <div class="layout-container">
         
-        <!-- This is the top text section -->
+        <!-- The top text section grouping the main heading and the descriptive paragraph -->
         <div class="header">
+            <!-- The main subtitle/heading for the page -->
             <h2>The Most Popular Destinations</h2>
+            <!-- The paragraph text. The <strong> tag makes the final sentence bold -->
             <p>Discover the community members' favorite destinations. Just click and start planning your trip from the comfort of your living room. <strong>Departure is just around the corner!</strong></p>
         </div>
 
-        <!-- This wrapper will hold all 3 cards in a horizontal row -->
+        <!-- The specific wrapper that holds the three cards. In CSS, we applied 'display: flex' to this so the cards sit side-by-side in a row -->
         <div class="cards-wrapper">
             
-            <!-- Card 1 (Sinu esimene kaart) -->
+            <!-- CARD 1: The individual white box containing one destination -->
             <div class="card">
+                <!-- The image at the top of the card. The 'src' is the link to the image, and 'alt' describes it if it fails to load -->
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ZfetSlrvlKYA4jiuIEaG3yGMWlX0DDSj9cYyA4APRwIjr4ay3y_FNUk&s=10" alt="Beach">
+                
+                <!-- A secondary wrapper inside the card to group the text and button. This allows us to add padding (empty space) inside the card edges -->
+                <div class="card-content">
+                    <!-- The specific title of the card -->
+                    <h3 class="card-title">Card title</h3>
+                    <!-- The small description text inside the card -->
+                    <p class="card-text">sint ex cillum aliquip ut reprehenderit cillum excepteur culpa do irure dolor Lorem laborum dolor</p>
+                    <!-- A clickable link (anchor tag). The 'href' tells it where to go, and the CSS makes it look like a teal button -->
+                    <a href="#" class="card-button">Visit this place</a>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+                <!-- The image at the top of the card -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ZfetSlrvlKYA4jiuIEaG3yGMWlX0DDSj9cYyA4APRwIjr4ay3y_FNUk&s=10" alt="Beach">
+                
+                <!-- Groups the text and button together to add inner spacing -->
                 <div class="card-content">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">sint ex cillum aliquip ut reprehenderit cillum excepteur culpa do irure dolor Lorem laborum dolor</p>
@@ -27,19 +56,12 @@
                 </div>
             </div>
 
-            <!-- Card 2 (Kopeeritud kaart) -->
+            <!-- CARD 3 -->
             <div class="card">
+                <!-- The image at the top of the card -->
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ZfetSlrvlKYA4jiuIEaG3yGMWlX0DDSj9cYyA4APRwIjr4ay3y_FNUk&s=10" alt="Beach">
-                <div class="card-content">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-text">sint ex cillum aliquip ut reprehenderit cillum excepteur culpa do irure dolor Lorem laborum dolor</p>
-                    <a href="#" class="card-button">Visit this place</a>
-                </div>
-            </div>
-
-            <!-- Card 3 (Kopeeritud kaart) -->
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ZfetSlrvlKYA4jiuIEaG3yGMWlX0DDSj9cYyA4APRwIjr4ay3y_FNUk&s=10" alt="Beach">
+                
+                <!-- Groups the text and button together to add inner spacing -->
                 <div class="card-content">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">sint ex cillum aliquip ut reprehenderit cillum excepteur culpa do irure dolor Lorem laborum dolor</p>
@@ -49,5 +71,5 @@
 
         </div>
     </div>
-</body>
-</html>
+  </body> 
+</html>4
